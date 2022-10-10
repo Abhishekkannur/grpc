@@ -13,3 +13,13 @@ service Sensor{
     rpc TempSensor(SensorRequest) returns (stream SensorResponse) {};
     rpc HumiditySensor(SensorRequest) returns (stream SensorResponse) {}; 
 }
+
+
+
+//After creating the proto file next step is to create .pb.go file and grpc.pb.go file i am getting an error 
+
+
+//PS C:\Users\Administrator\Desktop\golang\grpc_stream_medium> protoc --proto_path=protos protos/*.proto --go_out=server/
+//'protoc-gen-go' is not recognized as an internal or external command,
+//operable program or batch file.
+//--go_out: protoc-gen-go: Plugin failed with status code 1.
